@@ -6,14 +6,14 @@
 </template>
 
 <script>
+// 7.引入mapState
 import { mapState } from 'vuex';
 export default {
   name: 'user',
   data() {
-    return {
-
-    };
+    return {};
   },
+  // 8.利用computed获取state中的映射数据
   computed: {
     ...mapState({
       user: state => state.user.userInfo

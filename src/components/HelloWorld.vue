@@ -14,7 +14,7 @@
 <script>
 // import http from '../utils/http'
 import api from '@/api';
-import * as types from '@/store/mutationTypes.js';
+// import * as types from '@/store/mutationTypes.js';
 export default {
   name: 'hello',
   data() {
@@ -59,7 +59,8 @@ export default {
         name: this.name,
         idcard: this.idcard
       };
-      this.$store.commit(types.SAVE_USER_INFO, obj); // 保存数据到store
+      // 5.调用action,实行异步调用
+      this.$store.dispatch('saveUserInfo', obj); // 保存数据到store
       this.$router.push('/user');
     }
   }

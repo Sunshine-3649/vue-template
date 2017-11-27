@@ -11,4 +11,5 @@ export const AUTHROUTE_GET_ROUTE_SUCCESS = 'AUTHROUTE_GET_ROUTE_SUCCESS';
 export const AUTHROUTE_GET_ROUTE_FAILURE = 'AUTHROUTE_GET_ROUTE_FAILURE';
 // authRoute end
 
+// 2.定义一个常量, 作为提交mutation的name
 export const SAVE_USER_INFO = 'SAVE_USER_INFO'; // 保存用户信息
